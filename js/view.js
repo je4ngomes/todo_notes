@@ -32,7 +32,7 @@ const insertItemInList = (item) => {
 }
 
 const fetchTask = () => {
-  axios.get('api/select_tasks')
+  axios.get('api/select_tasks.php')
     .then(({ data }) => {
       if (data.result) {
         data.result.forEach(insertItemInList);
