@@ -1,0 +1,58 @@
+body, html {
+    padding: 0;
+    margin: 0;
+}
+
+/* label color */
+.input-field input[type=text] + label, input {
+    color: #fff !important;
+}
+
+/* label focus color */
+
+.input-field input[type=text]:focus + label {
+    color: #fff !important;
+}
+
+/* label underline focus color */
+.input-field input[type=text]:focus {
+    border-bottom: 1px solid #fff !important;
+    box-shadow: 0 1px 0 0 #fff !important;
+}
+
+.button_floating {
+    position: absolute;
+    top: 40px;
+    right: 30px;
+}
+
+.button_floating button:nth-child(1) {
+    background-color: #4527a0 !important;
+}
+
+.button_floating button:nth-child(2) {
+    background-color: #651fff !important;
+}
+
+.center_screen {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+html {
+    background-image: url(./img/cover.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+}
+
+.btn-large, .btn-small {
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+}

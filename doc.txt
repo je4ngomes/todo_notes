@@ -1,0 +1,23 @@
+Cria um banco:
+Nome db: todo
+Nome table: task
+Campos: id_task, title, description, image_url, created_at
+
+
+API
+
+[GET] - select_task.php
+	Retorno Sucesso: { result: [{id, title, description, image_url, createdAt}, {id, title, description, image_url, createdAt}], error: null }
+	Retorno Error: { result: null, error: 'Mensagem error' }
+[POST] - create_task.php
+	Recebe: $_POST (title, description, image_url)
+	Retorno Sucesso: { result: {id_task, title, description, image_url, createdAt}, error: null }
+	Retorno Error: { result: null, error: 'Mensagem error' }
+[PUT] - edit_task.php
+	Recebe: $_PUT (id_task, title, description, image_url)
+	Retorno Sucesso: { result: {id, title, description, image_url}, error: null }
+	Retorno Error: { result: null, error: 'Mensagem error' }
+[DELETE] - delete_task.php
+	Recebe: $_DELETE (id_task)
+	Retorno Sucesso: { result: {id, title, description, image_url}, error: null }
+	Retorno Error: { result: null, error: 'Mensagem error' }

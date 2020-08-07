@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+            
+    <title>TODO</title>
+</head>
+<body>
+    <nav style="background-color: #7e57c2;">
+        <div class="nav-wrapper">
+            <ul id="nav-mobile" class="left hide-on-med-and-down">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="create.html">Nova anotação</a></li>
+                <li><a href="view.html">Minhas anotações</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="row">
+        <form class='todo_form' class="col s12">
+            <div style="background-color: #7e57c2; border-radius: 20px;margin-top: 7rem;" class="col s4 offset-s4 z-depth-2">
+                <div style="padding: 20px;">
+                    <h5 class="title_task" style="text-align: center;color: #fff;">Adicionar nova tarefa</h5>
+                    <div class="row" style="margin-bottom: 0px;">
+                        <div class="input-field col s10 offset-s1">
+                            <input name='title' id="title" type="text" required class="validate">
+                            <label for="title">Titulo</label>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-bottom: 0px;">
+                        <div class="input-field col s10 offset-s1">
+                            <input name='description' id="description" type="text" required class="validate">
+                            <label for="description">Descrição</label>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-bottom: 0px;">
+                        <div class="input-field col s10 offset-s1">
+                            <input name='image_url' id="image_url" type="text" class="validate">
+                            <label for="image_url">Imagem url</label>
+                        </div>
+                    </div>
+                    <div style="text-align: center;">
+                        <button class="add_button waves-effect waves-light btn-small" style="background-color: #7e57c2;">Adicionar</button>
+                    </div>
+                </div>
+
+            </div>
+        </form>
+    </div>
+    <script src="js/create.js"></script>
+</body>
+</html>
