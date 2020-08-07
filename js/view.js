@@ -10,7 +10,7 @@ const templateItemString = (item) => (`
 <div id="${item.id_task}" class="input-field col s8 offset-s2">
     <div class="card horizontal">
         <div class="card-image">
-            <img style="max-width: 230px;max-height: 150px;" src="${item.image_url}">
+            <img style="max-width: 230px;max-height: 150px;" src="${item.image_url && item.image_url !== '' ? item.imagem_url : 'https://www.fromthegrapevine.com/static/img/not_available.png'}">
             </div>
             <div class="card-stacked">
             <div class="card-content">
