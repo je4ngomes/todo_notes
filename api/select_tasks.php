@@ -11,6 +11,5 @@
     } else {
         $json[] = array("result" => null);
     }
-
     echo json_encode(array("result" => $json));
 ?>
