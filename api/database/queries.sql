@@ -1,0 +1,9 @@
+CREATE DATABASE todo;
+
+CREATE TABLE task (
+    id_task INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(100) NOT NULL,
+    description VARCHAR(100) NOT NULL,
+    image_url VARCHAR(8000) NOT NULL,
+    create_at DATETIME NOT NULL
+);
