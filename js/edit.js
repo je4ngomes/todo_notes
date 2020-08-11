@@ -11,7 +11,7 @@ addButton.addEventListener('click', (e) => {
   axios.post('api/edit_task.php', {...data, id})
     .then(({ data }) => {
       if (data.result) {
-        M.toast({html: 'Anotação salva com sucesso.'});
+        M.toast({html: 'Tarefa salva com sucesso.'});
         document.location.href = 'view.html'
       } else {
         M.toast({html: 'Erro ao salvar nova tarefa.'});

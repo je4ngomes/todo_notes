@@ -27,11 +27,11 @@ body, html {
 }
 
 .button_floating button:nth-child(1) {
-    background-color: #4527a0 !important;
+    background-color: #651fff !important;
 }
 
 .button_floating button:nth-child(2) {
-    background-color: #651fff !important;
+    background-color: #4527a0 !important;
 }
 
 .center_screen {

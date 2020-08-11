@@ -1,5 +1,4 @@
 const form = document.querySelector('.todo_form');
-const titleTask = document.querySelector('.title__task');
 const addButton = document.querySelector('.add_button');
 
 addButton.addEventListener('click', (e) => {

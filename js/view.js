@@ -28,7 +28,7 @@ const templateItemString = (item) => (`
 
 const insertItemInList = (item) => {
   document.querySelector('.list')
-    .insertAdjacentHTML('beforeend', templateItemString(item))
+	.insertAdjacentHTML('beforeend', templateItemString(item))
 }
 
 const fetchTask = () => {
