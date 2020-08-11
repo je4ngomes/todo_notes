@@ -6,7 +6,7 @@
 
     $sql = "DELETE FROM task WHERE id_task='$id'";
 
-    if ($result = $conn -> query($sql)) {
+    if ($conn -> query($sql)) {
         echo json_encode(array("result" => true));
     } else {
         echo json_encode(array("result" => false, error => $conn->error));
